@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-4.3.1/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css?V6" type="text/css" />
+    <title>88 Transportes | Cadastro de Endereços</title>
+    <link rel="icon" href="img/favicon.webp" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/2fcffea90c.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/cadastroEnderecos.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/logout.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary nav-top">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.webp" class="logo" width="120"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav mr-auto"></ul>
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active text-white zoom" href="index.html"><i class="fa fa-home"
+              aria-hidden="true"></i>&nbsp;Início</a>
+            <a class="nav-item nav-link active text-white zoom" href="login.html"><i class="fas fa-sign-in-alt"
+              aria-hidden="true"></i>&nbsp;Entrar</a>
+            <a class="nav-item nav-link active text-white zoom" href="cadastro.html"><i class="fa fa-car"
+                aria-hidden="true"></i>&nbsp;Motorista</a>
+            <a class="nav-item nav-link active text-white zoom" href="listagem.html"><i class="fas fa-map-marked-alt"
+              aria-hidden="true"></i>&nbsp;Endereços</a>
+            <a class="nav-item nav-link active text-white zoom" href="sobrenos.html"><i class="fa fa-info-circle"
+              aria-hidden="true"></i>&nbsp;Sobre Nós</a>
+            <a class="nav-item nav-link active text-white zoom" href="#" onclick="logout()"><i class="fas fa-sign-out-alt"
+              aria-hidden="true"></i>&nbsp;Sair</a>
+          </div>
+        </div>
+      </nav>
+  
+      <div class="background">
+        <div class="overlay">
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-header text-center">
+                    <h3>Cadastro de Endereços</h3>
+                  </div>
+                  <div class="card-body">
+                    <form>
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <label><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;Título:</label>
+                          <input type="text" class="form-control" id="title" placeholder="Digite o título:">
+                        </div>
+                      </div>
+  
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <label><i class="fas fa-map-pin" aria-hidden="true"></i>&nbsp;CEP:</label>
+                          <input type="text" class="form-control" id="cep" placeholder="Digite o CEP:">
+                        </div>
+                      </div>
+  
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <label><i class="fas fa-map-marked-alt" aria-hidden="true"></i>&nbsp;Endereço:</label>
+                          <input type="email" class="form-control" id="address" placeholder="Digite o endereço:">
+                        </div>
+                      </div>
+  
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <label><i class="fas fa-map-signs" aria-hidden="true"></i>&nbsp;Número:</label>
+                          <input type="text" class="form-control" id="number" placeholder="Digite o número:">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <label><i class="fas fa-puzzle-piece" aria-hidden="true"></i>&nbsp;Complemento:</label>
+                          <input type="text" class="form-control" id="complement" placeholder="Digite o complemento:">
+                        </div>
+                      </div>
+                      
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <button class="btn btn-global zoom" type="button" onclick="cadastroEnderecos()">Cadastrar</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </header>
+  </body>  
+  
+  <script type="text/javascript" src="js/jquery-3.4.1/jquery-3.4.1.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/bootstrap-4.3.1/bootstrap.bundle.min.js" charset="utf-8"></script>
+  
+</html>
